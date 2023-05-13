@@ -1,16 +1,17 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:pokemon_app/features/home/domain/entities/pokemon.dart';
 
-part "pokemon_model.g.dart";
-
-@JsonSerializable()
 class PokemoModel extends Pokemon {
   const PokemoModel({required super.id, required super.name});
 
-  factory PokemoModel.fromJson(Map<String, dynamic> json) =>
-      _$PokemoModelFromJson(json);
+  factory PokemoModel.fromJson(Map<String, dynamic> json) => PokemoModel(
+        id: json['id'] ?? 0,
+        name: json['name'] ?? "unknown",
+      );
 
-  Map<String, dynamic> toJson() => _$PokemoModelToJson(this);
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'name': name,
+      };
 
   @override
   String toString() => toJson().toString();
