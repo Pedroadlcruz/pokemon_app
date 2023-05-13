@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
 class Pokemon extends Equatable {
-  final String id;
+  final int id;
   final String name;
 
   const Pokemon({required this.id, required this.name});
