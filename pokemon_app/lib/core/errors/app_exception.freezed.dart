@@ -19,37 +19,37 @@ mixin _$AppException {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noNetworkConnection,
-    required TResult Function() unexpected,
     required TResult Function() notFound,
     required TResult Function() serverError,
     required TResult Function() connectionError,
     required TResult Function() timeOut,
     required TResult Function() badRequest,
     required TResult Function() requestFormat,
+    required TResult Function() unexpected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noNetworkConnection,
-    TResult? Function()? unexpected,
     TResult? Function()? notFound,
     TResult? Function()? serverError,
     TResult? Function()? connectionError,
     TResult? Function()? timeOut,
     TResult? Function()? badRequest,
     TResult? Function()? requestFormat,
+    TResult? Function()? unexpected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noNetworkConnection,
-    TResult Function()? unexpected,
     TResult Function()? notFound,
     TResult Function()? serverError,
     TResult Function()? connectionError,
     TResult Function()? timeOut,
     TResult Function()? badRequest,
     TResult Function()? requestFormat,
+    TResult Function()? unexpected,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -57,37 +57,37 @@ mixin _$AppException {
   TResult map<TResult extends Object?>({
     required TResult Function(NoNetworkConnectionException value)
         noNetworkConnection,
-    required TResult Function(UnexpectedException value) unexpected,
     required TResult Function(NotFoundException value) notFound,
     required TResult Function(ServerErrorException value) serverError,
     required TResult Function(ConnectionException value) connectionError,
     required TResult Function(TimeOutException value) timeOut,
     required TResult Function(BadRequestException value) badRequest,
     required TResult Function(RequestFormatException value) requestFormat,
+    required TResult Function(UnexpectedException value) unexpected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult? Function(UnexpectedException value)? unexpected,
     TResult? Function(NotFoundException value)? notFound,
     TResult? Function(ServerErrorException value)? serverError,
     TResult? Function(ConnectionException value)? connectionError,
     TResult? Function(TimeOutException value)? timeOut,
     TResult? Function(BadRequestException value)? badRequest,
     TResult? Function(RequestFormatException value)? requestFormat,
+    TResult? Function(UnexpectedException value)? unexpected,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult Function(UnexpectedException value)? unexpected,
     TResult Function(NotFoundException value)? notFound,
     TResult Function(ServerErrorException value)? serverError,
     TResult Function(ConnectionException value)? connectionError,
     TResult Function(TimeOutException value)? timeOut,
     TResult Function(BadRequestException value)? badRequest,
     TResult Function(RequestFormatException value)? requestFormat,
+    TResult Function(UnexpectedException value)? unexpected,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -153,13 +153,13 @@ class _$NoNetworkConnectionException implements NoNetworkConnectionException {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noNetworkConnection,
-    required TResult Function() unexpected,
     required TResult Function() notFound,
     required TResult Function() serverError,
     required TResult Function() connectionError,
     required TResult Function() timeOut,
     required TResult Function() badRequest,
     required TResult Function() requestFormat,
+    required TResult Function() unexpected,
   }) {
     return noNetworkConnection();
   }
@@ -168,13 +168,13 @@ class _$NoNetworkConnectionException implements NoNetworkConnectionException {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noNetworkConnection,
-    TResult? Function()? unexpected,
     TResult? Function()? notFound,
     TResult? Function()? serverError,
     TResult? Function()? connectionError,
     TResult? Function()? timeOut,
     TResult? Function()? badRequest,
     TResult? Function()? requestFormat,
+    TResult? Function()? unexpected,
   }) {
     return noNetworkConnection?.call();
   }
@@ -183,13 +183,13 @@ class _$NoNetworkConnectionException implements NoNetworkConnectionException {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noNetworkConnection,
-    TResult Function()? unexpected,
     TResult Function()? notFound,
     TResult Function()? serverError,
     TResult Function()? connectionError,
     TResult Function()? timeOut,
     TResult Function()? badRequest,
     TResult Function()? requestFormat,
+    TResult Function()? unexpected,
     required TResult orElse(),
   }) {
     if (noNetworkConnection != null) {
@@ -203,13 +203,13 @@ class _$NoNetworkConnectionException implements NoNetworkConnectionException {
   TResult map<TResult extends Object?>({
     required TResult Function(NoNetworkConnectionException value)
         noNetworkConnection,
-    required TResult Function(UnexpectedException value) unexpected,
     required TResult Function(NotFoundException value) notFound,
     required TResult Function(ServerErrorException value) serverError,
     required TResult Function(ConnectionException value) connectionError,
     required TResult Function(TimeOutException value) timeOut,
     required TResult Function(BadRequestException value) badRequest,
     required TResult Function(RequestFormatException value) requestFormat,
+    required TResult Function(UnexpectedException value) unexpected,
   }) {
     return noNetworkConnection(this);
   }
@@ -218,13 +218,13 @@ class _$NoNetworkConnectionException implements NoNetworkConnectionException {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult? Function(UnexpectedException value)? unexpected,
     TResult? Function(NotFoundException value)? notFound,
     TResult? Function(ServerErrorException value)? serverError,
     TResult? Function(ConnectionException value)? connectionError,
     TResult? Function(TimeOutException value)? timeOut,
     TResult? Function(BadRequestException value)? badRequest,
     TResult? Function(RequestFormatException value)? requestFormat,
+    TResult? Function(UnexpectedException value)? unexpected,
   }) {
     return noNetworkConnection?.call(this);
   }
@@ -233,13 +233,13 @@ class _$NoNetworkConnectionException implements NoNetworkConnectionException {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult Function(UnexpectedException value)? unexpected,
     TResult Function(NotFoundException value)? notFound,
     TResult Function(ServerErrorException value)? serverError,
     TResult Function(ConnectionException value)? connectionError,
     TResult Function(TimeOutException value)? timeOut,
     TResult Function(BadRequestException value)? badRequest,
     TResult Function(RequestFormatException value)? requestFormat,
+    TResult Function(UnexpectedException value)? unexpected,
     required TResult orElse(),
   }) {
     if (noNetworkConnection != null) {
@@ -251,145 +251,6 @@ class _$NoNetworkConnectionException implements NoNetworkConnectionException {
 
 abstract class NoNetworkConnectionException implements AppException {
   const factory NoNetworkConnectionException() = _$NoNetworkConnectionException;
-}
-
-/// @nodoc
-abstract class _$$UnexpectedExceptionCopyWith<$Res> {
-  factory _$$UnexpectedExceptionCopyWith(_$UnexpectedException value,
-          $Res Function(_$UnexpectedException) then) =
-      __$$UnexpectedExceptionCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$UnexpectedExceptionCopyWithImpl<$Res>
-    extends _$AppExceptionCopyWithImpl<$Res, _$UnexpectedException>
-    implements _$$UnexpectedExceptionCopyWith<$Res> {
-  __$$UnexpectedExceptionCopyWithImpl(
-      _$UnexpectedException _value, $Res Function(_$UnexpectedException) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$UnexpectedException implements UnexpectedException {
-  const _$UnexpectedException();
-
-  @override
-  String toString() {
-    return 'AppException.unexpected()';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$UnexpectedException);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() noNetworkConnection,
-    required TResult Function() unexpected,
-    required TResult Function() notFound,
-    required TResult Function() serverError,
-    required TResult Function() connectionError,
-    required TResult Function() timeOut,
-    required TResult Function() badRequest,
-    required TResult Function() requestFormat,
-  }) {
-    return unexpected();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? noNetworkConnection,
-    TResult? Function()? unexpected,
-    TResult? Function()? notFound,
-    TResult? Function()? serverError,
-    TResult? Function()? connectionError,
-    TResult? Function()? timeOut,
-    TResult? Function()? badRequest,
-    TResult? Function()? requestFormat,
-  }) {
-    return unexpected?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? noNetworkConnection,
-    TResult Function()? unexpected,
-    TResult Function()? notFound,
-    TResult Function()? serverError,
-    TResult Function()? connectionError,
-    TResult Function()? timeOut,
-    TResult Function()? badRequest,
-    TResult Function()? requestFormat,
-    required TResult orElse(),
-  }) {
-    if (unexpected != null) {
-      return unexpected();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(NoNetworkConnectionException value)
-        noNetworkConnection,
-    required TResult Function(UnexpectedException value) unexpected,
-    required TResult Function(NotFoundException value) notFound,
-    required TResult Function(ServerErrorException value) serverError,
-    required TResult Function(ConnectionException value) connectionError,
-    required TResult Function(TimeOutException value) timeOut,
-    required TResult Function(BadRequestException value) badRequest,
-    required TResult Function(RequestFormatException value) requestFormat,
-  }) {
-    return unexpected(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult? Function(UnexpectedException value)? unexpected,
-    TResult? Function(NotFoundException value)? notFound,
-    TResult? Function(ServerErrorException value)? serverError,
-    TResult? Function(ConnectionException value)? connectionError,
-    TResult? Function(TimeOutException value)? timeOut,
-    TResult? Function(BadRequestException value)? badRequest,
-    TResult? Function(RequestFormatException value)? requestFormat,
-  }) {
-    return unexpected?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult Function(UnexpectedException value)? unexpected,
-    TResult Function(NotFoundException value)? notFound,
-    TResult Function(ServerErrorException value)? serverError,
-    TResult Function(ConnectionException value)? connectionError,
-    TResult Function(TimeOutException value)? timeOut,
-    TResult Function(BadRequestException value)? badRequest,
-    TResult Function(RequestFormatException value)? requestFormat,
-    required TResult orElse(),
-  }) {
-    if (unexpected != null) {
-      return unexpected(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class UnexpectedException implements AppException {
-  const factory UnexpectedException() = _$UnexpectedException;
 }
 
 /// @nodoc
@@ -431,13 +292,13 @@ class _$NotFoundException implements NotFoundException {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noNetworkConnection,
-    required TResult Function() unexpected,
     required TResult Function() notFound,
     required TResult Function() serverError,
     required TResult Function() connectionError,
     required TResult Function() timeOut,
     required TResult Function() badRequest,
     required TResult Function() requestFormat,
+    required TResult Function() unexpected,
   }) {
     return notFound();
   }
@@ -446,13 +307,13 @@ class _$NotFoundException implements NotFoundException {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noNetworkConnection,
-    TResult? Function()? unexpected,
     TResult? Function()? notFound,
     TResult? Function()? serverError,
     TResult? Function()? connectionError,
     TResult? Function()? timeOut,
     TResult? Function()? badRequest,
     TResult? Function()? requestFormat,
+    TResult? Function()? unexpected,
   }) {
     return notFound?.call();
   }
@@ -461,13 +322,13 @@ class _$NotFoundException implements NotFoundException {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noNetworkConnection,
-    TResult Function()? unexpected,
     TResult Function()? notFound,
     TResult Function()? serverError,
     TResult Function()? connectionError,
     TResult Function()? timeOut,
     TResult Function()? badRequest,
     TResult Function()? requestFormat,
+    TResult Function()? unexpected,
     required TResult orElse(),
   }) {
     if (notFound != null) {
@@ -481,13 +342,13 @@ class _$NotFoundException implements NotFoundException {
   TResult map<TResult extends Object?>({
     required TResult Function(NoNetworkConnectionException value)
         noNetworkConnection,
-    required TResult Function(UnexpectedException value) unexpected,
     required TResult Function(NotFoundException value) notFound,
     required TResult Function(ServerErrorException value) serverError,
     required TResult Function(ConnectionException value) connectionError,
     required TResult Function(TimeOutException value) timeOut,
     required TResult Function(BadRequestException value) badRequest,
     required TResult Function(RequestFormatException value) requestFormat,
+    required TResult Function(UnexpectedException value) unexpected,
   }) {
     return notFound(this);
   }
@@ -496,13 +357,13 @@ class _$NotFoundException implements NotFoundException {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult? Function(UnexpectedException value)? unexpected,
     TResult? Function(NotFoundException value)? notFound,
     TResult? Function(ServerErrorException value)? serverError,
     TResult? Function(ConnectionException value)? connectionError,
     TResult? Function(TimeOutException value)? timeOut,
     TResult? Function(BadRequestException value)? badRequest,
     TResult? Function(RequestFormatException value)? requestFormat,
+    TResult? Function(UnexpectedException value)? unexpected,
   }) {
     return notFound?.call(this);
   }
@@ -511,13 +372,13 @@ class _$NotFoundException implements NotFoundException {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult Function(UnexpectedException value)? unexpected,
     TResult Function(NotFoundException value)? notFound,
     TResult Function(ServerErrorException value)? serverError,
     TResult Function(ConnectionException value)? connectionError,
     TResult Function(TimeOutException value)? timeOut,
     TResult Function(BadRequestException value)? badRequest,
     TResult Function(RequestFormatException value)? requestFormat,
+    TResult Function(UnexpectedException value)? unexpected,
     required TResult orElse(),
   }) {
     if (notFound != null) {
@@ -570,13 +431,13 @@ class _$ServerErrorException implements ServerErrorException {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noNetworkConnection,
-    required TResult Function() unexpected,
     required TResult Function() notFound,
     required TResult Function() serverError,
     required TResult Function() connectionError,
     required TResult Function() timeOut,
     required TResult Function() badRequest,
     required TResult Function() requestFormat,
+    required TResult Function() unexpected,
   }) {
     return serverError();
   }
@@ -585,13 +446,13 @@ class _$ServerErrorException implements ServerErrorException {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noNetworkConnection,
-    TResult? Function()? unexpected,
     TResult? Function()? notFound,
     TResult? Function()? serverError,
     TResult? Function()? connectionError,
     TResult? Function()? timeOut,
     TResult? Function()? badRequest,
     TResult? Function()? requestFormat,
+    TResult? Function()? unexpected,
   }) {
     return serverError?.call();
   }
@@ -600,13 +461,13 @@ class _$ServerErrorException implements ServerErrorException {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noNetworkConnection,
-    TResult Function()? unexpected,
     TResult Function()? notFound,
     TResult Function()? serverError,
     TResult Function()? connectionError,
     TResult Function()? timeOut,
     TResult Function()? badRequest,
     TResult Function()? requestFormat,
+    TResult Function()? unexpected,
     required TResult orElse(),
   }) {
     if (serverError != null) {
@@ -620,13 +481,13 @@ class _$ServerErrorException implements ServerErrorException {
   TResult map<TResult extends Object?>({
     required TResult Function(NoNetworkConnectionException value)
         noNetworkConnection,
-    required TResult Function(UnexpectedException value) unexpected,
     required TResult Function(NotFoundException value) notFound,
     required TResult Function(ServerErrorException value) serverError,
     required TResult Function(ConnectionException value) connectionError,
     required TResult Function(TimeOutException value) timeOut,
     required TResult Function(BadRequestException value) badRequest,
     required TResult Function(RequestFormatException value) requestFormat,
+    required TResult Function(UnexpectedException value) unexpected,
   }) {
     return serverError(this);
   }
@@ -635,13 +496,13 @@ class _$ServerErrorException implements ServerErrorException {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult? Function(UnexpectedException value)? unexpected,
     TResult? Function(NotFoundException value)? notFound,
     TResult? Function(ServerErrorException value)? serverError,
     TResult? Function(ConnectionException value)? connectionError,
     TResult? Function(TimeOutException value)? timeOut,
     TResult? Function(BadRequestException value)? badRequest,
     TResult? Function(RequestFormatException value)? requestFormat,
+    TResult? Function(UnexpectedException value)? unexpected,
   }) {
     return serverError?.call(this);
   }
@@ -650,13 +511,13 @@ class _$ServerErrorException implements ServerErrorException {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult Function(UnexpectedException value)? unexpected,
     TResult Function(NotFoundException value)? notFound,
     TResult Function(ServerErrorException value)? serverError,
     TResult Function(ConnectionException value)? connectionError,
     TResult Function(TimeOutException value)? timeOut,
     TResult Function(BadRequestException value)? badRequest,
     TResult Function(RequestFormatException value)? requestFormat,
+    TResult Function(UnexpectedException value)? unexpected,
     required TResult orElse(),
   }) {
     if (serverError != null) {
@@ -709,13 +570,13 @@ class _$ConnectionException implements ConnectionException {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noNetworkConnection,
-    required TResult Function() unexpected,
     required TResult Function() notFound,
     required TResult Function() serverError,
     required TResult Function() connectionError,
     required TResult Function() timeOut,
     required TResult Function() badRequest,
     required TResult Function() requestFormat,
+    required TResult Function() unexpected,
   }) {
     return connectionError();
   }
@@ -724,13 +585,13 @@ class _$ConnectionException implements ConnectionException {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noNetworkConnection,
-    TResult? Function()? unexpected,
     TResult? Function()? notFound,
     TResult? Function()? serverError,
     TResult? Function()? connectionError,
     TResult? Function()? timeOut,
     TResult? Function()? badRequest,
     TResult? Function()? requestFormat,
+    TResult? Function()? unexpected,
   }) {
     return connectionError?.call();
   }
@@ -739,13 +600,13 @@ class _$ConnectionException implements ConnectionException {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noNetworkConnection,
-    TResult Function()? unexpected,
     TResult Function()? notFound,
     TResult Function()? serverError,
     TResult Function()? connectionError,
     TResult Function()? timeOut,
     TResult Function()? badRequest,
     TResult Function()? requestFormat,
+    TResult Function()? unexpected,
     required TResult orElse(),
   }) {
     if (connectionError != null) {
@@ -759,13 +620,13 @@ class _$ConnectionException implements ConnectionException {
   TResult map<TResult extends Object?>({
     required TResult Function(NoNetworkConnectionException value)
         noNetworkConnection,
-    required TResult Function(UnexpectedException value) unexpected,
     required TResult Function(NotFoundException value) notFound,
     required TResult Function(ServerErrorException value) serverError,
     required TResult Function(ConnectionException value) connectionError,
     required TResult Function(TimeOutException value) timeOut,
     required TResult Function(BadRequestException value) badRequest,
     required TResult Function(RequestFormatException value) requestFormat,
+    required TResult Function(UnexpectedException value) unexpected,
   }) {
     return connectionError(this);
   }
@@ -774,13 +635,13 @@ class _$ConnectionException implements ConnectionException {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult? Function(UnexpectedException value)? unexpected,
     TResult? Function(NotFoundException value)? notFound,
     TResult? Function(ServerErrorException value)? serverError,
     TResult? Function(ConnectionException value)? connectionError,
     TResult? Function(TimeOutException value)? timeOut,
     TResult? Function(BadRequestException value)? badRequest,
     TResult? Function(RequestFormatException value)? requestFormat,
+    TResult? Function(UnexpectedException value)? unexpected,
   }) {
     return connectionError?.call(this);
   }
@@ -789,13 +650,13 @@ class _$ConnectionException implements ConnectionException {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult Function(UnexpectedException value)? unexpected,
     TResult Function(NotFoundException value)? notFound,
     TResult Function(ServerErrorException value)? serverError,
     TResult Function(ConnectionException value)? connectionError,
     TResult Function(TimeOutException value)? timeOut,
     TResult Function(BadRequestException value)? badRequest,
     TResult Function(RequestFormatException value)? requestFormat,
+    TResult Function(UnexpectedException value)? unexpected,
     required TResult orElse(),
   }) {
     if (connectionError != null) {
@@ -848,13 +709,13 @@ class _$TimeOutException implements TimeOutException {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noNetworkConnection,
-    required TResult Function() unexpected,
     required TResult Function() notFound,
     required TResult Function() serverError,
     required TResult Function() connectionError,
     required TResult Function() timeOut,
     required TResult Function() badRequest,
     required TResult Function() requestFormat,
+    required TResult Function() unexpected,
   }) {
     return timeOut();
   }
@@ -863,13 +724,13 @@ class _$TimeOutException implements TimeOutException {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noNetworkConnection,
-    TResult? Function()? unexpected,
     TResult? Function()? notFound,
     TResult? Function()? serverError,
     TResult? Function()? connectionError,
     TResult? Function()? timeOut,
     TResult? Function()? badRequest,
     TResult? Function()? requestFormat,
+    TResult? Function()? unexpected,
   }) {
     return timeOut?.call();
   }
@@ -878,13 +739,13 @@ class _$TimeOutException implements TimeOutException {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noNetworkConnection,
-    TResult Function()? unexpected,
     TResult Function()? notFound,
     TResult Function()? serverError,
     TResult Function()? connectionError,
     TResult Function()? timeOut,
     TResult Function()? badRequest,
     TResult Function()? requestFormat,
+    TResult Function()? unexpected,
     required TResult orElse(),
   }) {
     if (timeOut != null) {
@@ -898,13 +759,13 @@ class _$TimeOutException implements TimeOutException {
   TResult map<TResult extends Object?>({
     required TResult Function(NoNetworkConnectionException value)
         noNetworkConnection,
-    required TResult Function(UnexpectedException value) unexpected,
     required TResult Function(NotFoundException value) notFound,
     required TResult Function(ServerErrorException value) serverError,
     required TResult Function(ConnectionException value) connectionError,
     required TResult Function(TimeOutException value) timeOut,
     required TResult Function(BadRequestException value) badRequest,
     required TResult Function(RequestFormatException value) requestFormat,
+    required TResult Function(UnexpectedException value) unexpected,
   }) {
     return timeOut(this);
   }
@@ -913,13 +774,13 @@ class _$TimeOutException implements TimeOutException {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult? Function(UnexpectedException value)? unexpected,
     TResult? Function(NotFoundException value)? notFound,
     TResult? Function(ServerErrorException value)? serverError,
     TResult? Function(ConnectionException value)? connectionError,
     TResult? Function(TimeOutException value)? timeOut,
     TResult? Function(BadRequestException value)? badRequest,
     TResult? Function(RequestFormatException value)? requestFormat,
+    TResult? Function(UnexpectedException value)? unexpected,
   }) {
     return timeOut?.call(this);
   }
@@ -928,13 +789,13 @@ class _$TimeOutException implements TimeOutException {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult Function(UnexpectedException value)? unexpected,
     TResult Function(NotFoundException value)? notFound,
     TResult Function(ServerErrorException value)? serverError,
     TResult Function(ConnectionException value)? connectionError,
     TResult Function(TimeOutException value)? timeOut,
     TResult Function(BadRequestException value)? badRequest,
     TResult Function(RequestFormatException value)? requestFormat,
+    TResult Function(UnexpectedException value)? unexpected,
     required TResult orElse(),
   }) {
     if (timeOut != null) {
@@ -987,13 +848,13 @@ class _$BadRequestException implements BadRequestException {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noNetworkConnection,
-    required TResult Function() unexpected,
     required TResult Function() notFound,
     required TResult Function() serverError,
     required TResult Function() connectionError,
     required TResult Function() timeOut,
     required TResult Function() badRequest,
     required TResult Function() requestFormat,
+    required TResult Function() unexpected,
   }) {
     return badRequest();
   }
@@ -1002,13 +863,13 @@ class _$BadRequestException implements BadRequestException {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noNetworkConnection,
-    TResult? Function()? unexpected,
     TResult? Function()? notFound,
     TResult? Function()? serverError,
     TResult? Function()? connectionError,
     TResult? Function()? timeOut,
     TResult? Function()? badRequest,
     TResult? Function()? requestFormat,
+    TResult? Function()? unexpected,
   }) {
     return badRequest?.call();
   }
@@ -1017,13 +878,13 @@ class _$BadRequestException implements BadRequestException {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noNetworkConnection,
-    TResult Function()? unexpected,
     TResult Function()? notFound,
     TResult Function()? serverError,
     TResult Function()? connectionError,
     TResult Function()? timeOut,
     TResult Function()? badRequest,
     TResult Function()? requestFormat,
+    TResult Function()? unexpected,
     required TResult orElse(),
   }) {
     if (badRequest != null) {
@@ -1037,13 +898,13 @@ class _$BadRequestException implements BadRequestException {
   TResult map<TResult extends Object?>({
     required TResult Function(NoNetworkConnectionException value)
         noNetworkConnection,
-    required TResult Function(UnexpectedException value) unexpected,
     required TResult Function(NotFoundException value) notFound,
     required TResult Function(ServerErrorException value) serverError,
     required TResult Function(ConnectionException value) connectionError,
     required TResult Function(TimeOutException value) timeOut,
     required TResult Function(BadRequestException value) badRequest,
     required TResult Function(RequestFormatException value) requestFormat,
+    required TResult Function(UnexpectedException value) unexpected,
   }) {
     return badRequest(this);
   }
@@ -1052,13 +913,13 @@ class _$BadRequestException implements BadRequestException {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult? Function(UnexpectedException value)? unexpected,
     TResult? Function(NotFoundException value)? notFound,
     TResult? Function(ServerErrorException value)? serverError,
     TResult? Function(ConnectionException value)? connectionError,
     TResult? Function(TimeOutException value)? timeOut,
     TResult? Function(BadRequestException value)? badRequest,
     TResult? Function(RequestFormatException value)? requestFormat,
+    TResult? Function(UnexpectedException value)? unexpected,
   }) {
     return badRequest?.call(this);
   }
@@ -1067,13 +928,13 @@ class _$BadRequestException implements BadRequestException {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult Function(UnexpectedException value)? unexpected,
     TResult Function(NotFoundException value)? notFound,
     TResult Function(ServerErrorException value)? serverError,
     TResult Function(ConnectionException value)? connectionError,
     TResult Function(TimeOutException value)? timeOut,
     TResult Function(BadRequestException value)? badRequest,
     TResult Function(RequestFormatException value)? requestFormat,
+    TResult Function(UnexpectedException value)? unexpected,
     required TResult orElse(),
   }) {
     if (badRequest != null) {
@@ -1126,13 +987,13 @@ class _$RequestFormatException implements RequestFormatException {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() noNetworkConnection,
-    required TResult Function() unexpected,
     required TResult Function() notFound,
     required TResult Function() serverError,
     required TResult Function() connectionError,
     required TResult Function() timeOut,
     required TResult Function() badRequest,
     required TResult Function() requestFormat,
+    required TResult Function() unexpected,
   }) {
     return requestFormat();
   }
@@ -1141,13 +1002,13 @@ class _$RequestFormatException implements RequestFormatException {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? noNetworkConnection,
-    TResult? Function()? unexpected,
     TResult? Function()? notFound,
     TResult? Function()? serverError,
     TResult? Function()? connectionError,
     TResult? Function()? timeOut,
     TResult? Function()? badRequest,
     TResult? Function()? requestFormat,
+    TResult? Function()? unexpected,
   }) {
     return requestFormat?.call();
   }
@@ -1156,13 +1017,13 @@ class _$RequestFormatException implements RequestFormatException {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? noNetworkConnection,
-    TResult Function()? unexpected,
     TResult Function()? notFound,
     TResult Function()? serverError,
     TResult Function()? connectionError,
     TResult Function()? timeOut,
     TResult Function()? badRequest,
     TResult Function()? requestFormat,
+    TResult Function()? unexpected,
     required TResult orElse(),
   }) {
     if (requestFormat != null) {
@@ -1176,13 +1037,13 @@ class _$RequestFormatException implements RequestFormatException {
   TResult map<TResult extends Object?>({
     required TResult Function(NoNetworkConnectionException value)
         noNetworkConnection,
-    required TResult Function(UnexpectedException value) unexpected,
     required TResult Function(NotFoundException value) notFound,
     required TResult Function(ServerErrorException value) serverError,
     required TResult Function(ConnectionException value) connectionError,
     required TResult Function(TimeOutException value) timeOut,
     required TResult Function(BadRequestException value) badRequest,
     required TResult Function(RequestFormatException value) requestFormat,
+    required TResult Function(UnexpectedException value) unexpected,
   }) {
     return requestFormat(this);
   }
@@ -1191,13 +1052,13 @@ class _$RequestFormatException implements RequestFormatException {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult? Function(UnexpectedException value)? unexpected,
     TResult? Function(NotFoundException value)? notFound,
     TResult? Function(ServerErrorException value)? serverError,
     TResult? Function(ConnectionException value)? connectionError,
     TResult? Function(TimeOutException value)? timeOut,
     TResult? Function(BadRequestException value)? badRequest,
     TResult? Function(RequestFormatException value)? requestFormat,
+    TResult? Function(UnexpectedException value)? unexpected,
   }) {
     return requestFormat?.call(this);
   }
@@ -1206,13 +1067,13 @@ class _$RequestFormatException implements RequestFormatException {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(NoNetworkConnectionException value)? noNetworkConnection,
-    TResult Function(UnexpectedException value)? unexpected,
     TResult Function(NotFoundException value)? notFound,
     TResult Function(ServerErrorException value)? serverError,
     TResult Function(ConnectionException value)? connectionError,
     TResult Function(TimeOutException value)? timeOut,
     TResult Function(BadRequestException value)? badRequest,
     TResult Function(RequestFormatException value)? requestFormat,
+    TResult Function(UnexpectedException value)? unexpected,
     required TResult orElse(),
   }) {
     if (requestFormat != null) {
@@ -1224,4 +1085,143 @@ class _$RequestFormatException implements RequestFormatException {
 
 abstract class RequestFormatException implements AppException {
   const factory RequestFormatException() = _$RequestFormatException;
+}
+
+/// @nodoc
+abstract class _$$UnexpectedExceptionCopyWith<$Res> {
+  factory _$$UnexpectedExceptionCopyWith(_$UnexpectedException value,
+          $Res Function(_$UnexpectedException) then) =
+      __$$UnexpectedExceptionCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$UnexpectedExceptionCopyWithImpl<$Res>
+    extends _$AppExceptionCopyWithImpl<$Res, _$UnexpectedException>
+    implements _$$UnexpectedExceptionCopyWith<$Res> {
+  __$$UnexpectedExceptionCopyWithImpl(
+      _$UnexpectedException _value, $Res Function(_$UnexpectedException) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$UnexpectedException implements UnexpectedException {
+  const _$UnexpectedException();
+
+  @override
+  String toString() {
+    return 'AppException.unexpected()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$UnexpectedException);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() noNetworkConnection,
+    required TResult Function() notFound,
+    required TResult Function() serverError,
+    required TResult Function() connectionError,
+    required TResult Function() timeOut,
+    required TResult Function() badRequest,
+    required TResult Function() requestFormat,
+    required TResult Function() unexpected,
+  }) {
+    return unexpected();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? noNetworkConnection,
+    TResult? Function()? notFound,
+    TResult? Function()? serverError,
+    TResult? Function()? connectionError,
+    TResult? Function()? timeOut,
+    TResult? Function()? badRequest,
+    TResult? Function()? requestFormat,
+    TResult? Function()? unexpected,
+  }) {
+    return unexpected?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? noNetworkConnection,
+    TResult Function()? notFound,
+    TResult Function()? serverError,
+    TResult Function()? connectionError,
+    TResult Function()? timeOut,
+    TResult Function()? badRequest,
+    TResult Function()? requestFormat,
+    TResult Function()? unexpected,
+    required TResult orElse(),
+  }) {
+    if (unexpected != null) {
+      return unexpected();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(NoNetworkConnectionException value)
+        noNetworkConnection,
+    required TResult Function(NotFoundException value) notFound,
+    required TResult Function(ServerErrorException value) serverError,
+    required TResult Function(ConnectionException value) connectionError,
+    required TResult Function(TimeOutException value) timeOut,
+    required TResult Function(BadRequestException value) badRequest,
+    required TResult Function(RequestFormatException value) requestFormat,
+    required TResult Function(UnexpectedException value) unexpected,
+  }) {
+    return unexpected(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(NoNetworkConnectionException value)? noNetworkConnection,
+    TResult? Function(NotFoundException value)? notFound,
+    TResult? Function(ServerErrorException value)? serverError,
+    TResult? Function(ConnectionException value)? connectionError,
+    TResult? Function(TimeOutException value)? timeOut,
+    TResult? Function(BadRequestException value)? badRequest,
+    TResult? Function(RequestFormatException value)? requestFormat,
+    TResult? Function(UnexpectedException value)? unexpected,
+  }) {
+    return unexpected?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(NoNetworkConnectionException value)? noNetworkConnection,
+    TResult Function(NotFoundException value)? notFound,
+    TResult Function(ServerErrorException value)? serverError,
+    TResult Function(ConnectionException value)? connectionError,
+    TResult Function(TimeOutException value)? timeOut,
+    TResult Function(BadRequestException value)? badRequest,
+    TResult Function(RequestFormatException value)? requestFormat,
+    TResult Function(UnexpectedException value)? unexpected,
+    required TResult orElse(),
+  }) {
+    if (unexpected != null) {
+      return unexpected(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class UnexpectedException implements AppException {
+  const factory UnexpectedException() = _$UnexpectedException;
 }

@@ -4,6 +4,7 @@ import 'package:http_interceptor/http/intercepted_client.dart';
 import 'package:http_interceptor/models/request_data.dart';
 import 'package:http_interceptor/models/response_data.dart';
 import 'package:mocktail/mocktail.dart';
+import 'package:pokemon_app/core/services/http_client/http_client_service.dart';
 import 'package:pokemon_app/core/services/network/network_info.dart';
 
 class MockNetworkInfo extends Mock implements NetworkInfo {}
@@ -21,3 +22,5 @@ class MockInterceptedClient extends Mock implements InterceptedClient {}
 class MockResponse extends Mock implements http.Response {}
 
 class FakeUri extends Fake implements Uri {}
+
+class MockHttpClientService extends Mock implements HttpClientService {}

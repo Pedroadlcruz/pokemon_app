@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "pokemonId": "BULBASAUR",
+    "name": "Bulbasaur",
+    "form": null,
+    "type1": "grass",
+    "type2": "poison",
+    "generation": 1,
+    "atk": 118,
+    "sta": 128,
+    "def": 111,
+    "maxcp": 1260
+  },
+  {
+    "id": 2,
+    "pokemonId": "IVYSAUR",
+    "name": "Ivysaur",
+    "form": null,
+    "type1": "grass",
+    "type2": "poison",
+    "generation": 1,
+    "atk": 151,
+    "sta": 155,
+    "def": 143,
+    "maxcp": 1921
+  },
+  {
+    "id": 3,
+    "pokemonId": "VENUSAUR",
+    "name": "Venusaur",
+    "form": null,
+    "type1": "grass",
+    "type2": "poison",
+    "generation": 1,
+    "atk": 198,
+    "sta": 190,
+    "def": 189,
+    "maxcp": 3075
+  },
+  {
+    "id": 3,
+    "pokemonId": "VENUSAUR",
+    "name": "Venusaur",
+    "form": "Mega",
+    "type1": "grass",
+    "type2": "poison",
+    "generation": 1,
+    "atk": 241,
+    "sta": 190,
+    "def": 246,
+    "maxcp": 4181
+  },
+  {
+    "id": 4,
+    "pokemonId": "CHARMANDER",
+    "name": "Charmander",
+    "form": null,
+    "type1": "fire",
+    "type2": null,
+    "generation": 1,
+    "atk": 116,
+    "sta": 118,
+    "def": 93,
+    "maxcp": 1108
+  },
+  {
+    "id": 5,
+    "pokemonId": "CHARMELEON",
+    "name": "Charmeleon",
+    "form": null,
+    "type1": "fire",
+    "type2": null,
+    "generation": 1,
+    "atk": 158,
+    "sta": 151,
+    "def": 126,
+    "maxcp": 1868
+  }
+]
