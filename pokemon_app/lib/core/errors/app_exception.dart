@@ -23,14 +23,7 @@ extension AppExceptionDetails on AppException {
   AppFailure get toAppFailure {
     return maybeWhen(
       orElse: () => const AppFailure.unexpected(),
-      unexpected: () => const AppFailure.unexpected(),
       noNetworkConnection: () => const AppFailure.noNetworkConnection(),
-      notFound: () => const AppFailure.notFound(),
-      serverError: () => const AppFailure.serverError(),
-      connectionError: () => const AppFailure.connectionError(),
-      timeOut: () => const AppFailure.timeOut(),
-      badRequest: () => const AppFailure.badRequest(),
-      requestFormat: () => const AppFailure.requestFormat(),
     );
   }
 }
