@@ -28,6 +28,8 @@ dependencies:
   logger: ^1.3.0
   # Network status
   connectivity_plus: ^4.0.0
+  # Enviropment
+  flutter_dotenv: ^5.0.2
 
   # Data Serialization
   freezed_annotation: ^2.2.0
