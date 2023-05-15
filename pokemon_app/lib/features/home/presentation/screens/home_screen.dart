@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pokemon_app/core/constants/strings.dart';
 
 import '../blocs/pokemon/pokemon_bloc.dart';
+import '../widgets/pokemon_list.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({
@@ -22,15 +23,11 @@ class HomeScreen extends StatelessWidget {
             case PokemonsLoading():
               return const Center(child: CircularProgressIndicator());
             case PokemonsLoaded():
-              return const Center(
-                child: Text('Hello World'),
-              );
+              return PokemonList(pokemons: state.pokemons);
             case PokemonsFailure():
-              return const Center(
-                child: Text(Strings.unexpectedFailure),
-              );
+              return Center(child: Text(state.message));
           }
-          return Container();
+          return const SizedBox.shrink();
         },
       ),
     );

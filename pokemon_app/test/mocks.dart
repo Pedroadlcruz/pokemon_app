@@ -9,6 +9,7 @@ import 'package:pokemon_app/core/services/network/network_info.dart';
 import 'package:pokemon_app/features/home/data/data_sources/pokemon_remote_data_source.dart';
 import 'package:pokemon_app/features/home/domain/repositories/pokemon_repository.dart';
 import 'package:pokemon_app/features/home/domain/use_cases/get_pokemons.dart';
+import 'package:pokemon_app/features/home/presentation/blocs/pokemon/pokemon_bloc.dart';
 
 class MockNetworkInfo extends Mock implements NetworkInfo {}
 
@@ -31,6 +32,8 @@ class MockHttpClientService extends Mock implements HttpClientService {}
 class MockPokemonRepository extends Mock implements PokemonRepository {}
 
 class MockGetPokemons extends Mock implements GetPokemons {}
+
+class MockPokemonBloc extends Mock implements PokemonBloc {}
 
 class MockPokemonRemoteDataSource extends Mock
     implements PokemonRemoteDataSource {}
