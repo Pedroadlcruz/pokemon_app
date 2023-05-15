@@ -5,8 +5,10 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pokemon_app/features/home/domain/entities/pokemon.dart';
 import 'package:pokemon_app/features/home/presentation/blocs/pokemon/pokemon_bloc.dart';
 import 'package:pokemon_app/features/home/presentation/screens/home_screen.dart';
+import 'package:pokemon_app/features/home/presentation/screens/pokemon_detail_screeen.dart';
 import 'package:pokemon_app/service_locator.dart' as di;
 
 class AppRouter {
@@ -21,7 +23,9 @@ class AppRouter {
           value: di.sl<PokemonBloc>()..add(const LoadPokemonList()),
           child: const HomeScreen(),
         ));
-
+      case PokemonDetailScreen.routeName:
+        final pokemon = settings.arguments as Pokemon;
+        return _buildPage(PokemonDetailScreen(pokemon: pokemon));
       default:
         return PageRouteBuilder(
           pageBuilder: (_, __, ___) => Scaffold(
